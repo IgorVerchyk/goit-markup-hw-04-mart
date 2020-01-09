@@ -21,9 +21,6 @@
 .navig {
   display: flex;
   justify-content: space-between;
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
   align-items: center;
 }
 .logo-button {
@@ -76,13 +73,9 @@
 }
 
 /*Market Items*/
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+.container {
   width: 1110px;
+  margin: 0 auto;
 }
 .cont-title {
   font-size: 48px;
@@ -93,8 +86,7 @@
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
 }
 .mart {
   display: flex;
@@ -110,6 +102,9 @@
 }
 .mart-item:nth-child(4n) {
   margin-right: 0;
+}
+.mart-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
 }
 
 /* Product icons */
@@ -169,7 +164,15 @@
 .blog-item:nth-child(3n) {
   margin-right: 0;
 }
-.blog-button {
+.blog-itemtitle {
+  margin: 0;
+  margin-bottom: 45px;
+}
+.blog-text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.blog-rdm {
   display: inline-block;
   background-color: var(--blogbutton-color);
   text-decoration: none;
@@ -186,4 +189,8 @@
   padding-left: 50px;
   padding-right: 50px;
   border-radius: 3px;
+}
+.blog-rdm:hover,
+.blog-rdm:focus {
+  background-color: var(--accentp-color);
 }
